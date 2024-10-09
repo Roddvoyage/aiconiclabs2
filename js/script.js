@@ -37,45 +37,73 @@ const form = document.getElementById('contact-form');
 const errorMessage = document.getElementById('error-message');
 const charCount = document.getElementById('char-count');
 const messageField = document.getElementById('message');
-const messageformdiv= document.getElementById("message-form-div");
+const messageformdiv = document.getElementById("message-form-div");
 
-// Initialize EmailJS with your public key
-(function(){
-   emailjs.init("G0xIZEz26gR4UYFKe");  // Make sure this is your correct public key
-})();
 
+
+
+window.addEventListener('scroll', function() {
+    const images = document.querySelectorAll('.scroll-image');
+    const scrollPosition = window.scrollY;
+  
+    images.forEach((image) => {
+      // You can adjust this scroll position threshold as needed
+      if (scrollPosition > 100) { 
+        image.classList.add('scrolled');
+      } else {
+        image.classList.remove('scrolled');
+      }
+    });
+  });
+  
 // Character limit counter for message field
 messageField.addEventListener('input', () => {
-  charCount.textContent = `${messageField.value.length}/300 characters`;
+    charCount.textContent = `${messageField.value.length}/300 characters`;
 });
-function formOpen(){
-    messageformdiv.style.display="flex";
+
+function cancelfunction() {
+    messageformdiv.style.display = "none"; // Hide the form
 }
 
-
-function cancelfunction(){
-    messageformdiv.style.display="none";
-}
-
+// Submit form handler
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the default form submission
-  
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const message = document.getElementById('message').value;
-  
-  if (!name || !email || !phone || !message) {
-    errorMessage.textContent = "All fields are required.";
-    return;
-  }
-  
+    event.preventDefault(); // Prevent default submission
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    // Validation check
+    if (!name || !email || !phone || !message) {
+        errorMessage.textContent = "All fields are required.";
+        return;
+    }
+
+    // Form submission to Getform
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+    }).then(response => {
+        if (response.ok) {
+            messageformdiv.style.display = "none"; 
+            alert('Thank you for your message!');
+            form.reset(); // Optionally reset the form
+        } else {
+            errorMessage.textContent = "There was an error submitting the form.";
+        }
+    }).catch(error => {
+        errorMessage.textContent = "There was an error submitting the form.";
+        console.error(error);
+    });
 });
 
 // Send the email using EmailJS
 
 
-
+function formOpen(){
+    messageformdiv.style.display = "flex"; // Hide the form
+}
 
 
 window.onscroll = function() {
