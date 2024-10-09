@@ -201,6 +201,23 @@ hiddenElements5.forEach((el)=> observer5.observe(el));
 
 
 
+const observer6 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show6');
+            entry.target.classList.remove('hidden6');
+            observer6.unobserve(entry.target);
+        } else {
+            entry.target.classList.remove('show6');
+        }
+    })
+})
+
+const hiddenElements6 = document.querySelectorAll(".hidden6");
+hiddenElements6.forEach((el)=> observer6.observe(el));
+
+
 
 
 
