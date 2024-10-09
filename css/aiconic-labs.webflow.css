@@ -22,6 +22,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 #message-form-div {
   position: fixed;  /* Use 'fixed' to make sure it covers the whole screen */
   top: 0;
@@ -374,31 +375,48 @@ nav{
   color: #fff;
 }
 
+/* Initial styles for the divs: black and white */
+.scroll-image {
+  filter: grayscale(100%); /* Start in black and white */
+  transition: filter 2s ease; /* Smooth transition to color */
+}
+
+/* When scrolled, the divs return to full color */
+.scroll-image.scrolled {
+  filter: grayscale(0%); /* Restore original colors */
+}
+
+/* Existing styles for the divs */
+.div-block {
+  background-image: url('../images/24.png');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensure height is same as width */
+}
+
+.div-block-2 {
+  background-image: url('../images/7.png');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensure height is same as width */
+}
+
 .container-3 {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  height: 400px;
+  height: auto;
   margin-left: 0;
   margin-right: 0;
   display: flex;
 }
 
-.div-block {
-  background-image: url('../images/WhatsApp-Image-2024-09-04-at-02.12.58.png');
-  background-position: 0 0;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
 
-.div-block-2 {
-  background-image: url('../images/asian-model2.png');
-  background-position: 0 0;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
+
 
 .section {
   justify-content: space-between;
@@ -1063,6 +1081,62 @@ opacity:0%;
   transition: opacity 0.5s ease-in-out;
 }
 
+
+
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#video-text{
+  padding-left: 120px;
+  padding-right: 120px;
+width: 100%;
+gap:20px;
+}
+
+
+
+
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+font-size: 32px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 16px;
+  }
 .section-6 {
   justify-content: center;
   width: 100%;
@@ -1184,6 +1258,7 @@ opacity:0%;
   color: rgba(30,30,30,1.0);
   border-radius: 10px;
   width:80px;
+  font-family: 'Avenirltstd';
 }
 
 .div-block-27 {
@@ -1319,6 +1394,7 @@ opacity:0%;
 
 .text-block-5 {
   color: #fff;
+  line-height: 20px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1638,7 +1714,6 @@ width:auto;
   color:#1e1e1e;
 }
 
-
 .div-block-5 {
   transform: translateY(-50%);
   transition: transform 4s ease-in-out;
@@ -1925,6 +2000,62 @@ width:auto;
   opacity:0%;
   transition: opacity 0.5s ease-in-out 1500ms;
 }
+
+
+
+/*video*/
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#video-text{
+  padding-left: 80px;
+  padding-right: 80px;
+width: 100%;
+}
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+font-size: 28px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 20px;
+  }
+/*video-out*/
+
+
 
 /*FAQ*/
 
@@ -2741,6 +2872,64 @@ transform: translateY(-280px);
   opacity:0%;
   transition: opacity 0.5s ease-in-out 1500ms;
 }
+
+
+
+/*video*/
+
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+#video-text{
+  padding-left:40px;
+  padding-right: 40px;
+width: 100%;
+}
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+font-size: 24px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 18px;
+  }
+/*video-out*/
+
+
+
 
 /*FAQ*/
 
@@ -3571,6 +3760,66 @@ transform: translateY(-280px);
     opacity:0%;
     transition: opacity 0.5s ease-in-out 1500ms;
   }
+
+
+
+  /*video*/
+
+  #video-section{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#video-text{
+  padding-left: 40px;
+  padding-right: 40px;
+width: 100%;
+}
+
+
+
+
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+  font-size: 24px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 18px;
+  }
+/*video-out*/
   
   /*FAQ*/
   
@@ -4402,6 +4651,61 @@ transform: translateY(-280px);
       transition: opacity 0.5s ease-in-out 1500ms;
     }
     
+
+/*video*/
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#video-text{
+  padding-left: 40px;
+  padding-right: 40px;
+width: 100%;
+}
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+  font-size: 24px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 18px;
+  }
+/*video-out*/
+
+
+
     /*FAQ*/
     
     
@@ -5610,6 +5914,69 @@ transform: translateY(-280px);
     transition: opacity 0.5s ease-in-out 1500ms;
   }
   
+
+
+
+
+
+/*video*/
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+#video-text{
+  padding-left: 24px;
+  padding-right: 24px;
+width: 100%;
+}
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 14px;
+  }
+/*video-out*/
+
+
+
+
+
+
+
+
   /*FAQ*/
   
   
@@ -6646,6 +7013,65 @@ transform: translateY(-280px);
     transition: opacity 0.5s ease-in-out;
   }
   
+
+
+/*video*/
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+#video-text{
+  padding-left: 16px;
+  padding-right: 16px;
+width: 100%;
+}
+
+
+
+
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+  font-size: 18px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+    font-size: 14px;
+  }
+/*video-out*/
+
+
+
   .section-6 {
     justify-content: center;
     width: 100%;
@@ -7604,6 +8030,68 @@ transform: translateY(-280px);
      transition: opacity 0.5s ease-in-out;
    }
    
+
+
+
+
+
+/*video*/
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#video-text{
+  padding-left: 16px;
+  padding-right: 16px;
+width: 100%;
+}
+
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+  font-size: 18px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 14px;
+  }
+/*video-out*/
+
+
+
+
+
    .section-6 {
      justify-content: center;
      width: 100%;
@@ -8529,6 +9017,65 @@ transform: translateY(-280px);
      transition: opacity 0.5s ease-in-out;
    }
    
+
+
+/*video*/
+#video-section{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#video-text{
+  padding-left: 16px;
+  padding-right: 16px;
+width: 100%;
+}
+
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+  font-size: 18px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 14px;
+  }
+/*video-out*/
+
+
+
+
+
    .section-6 {
      justify-content: center;
      width: 100%;
@@ -8973,6 +9520,19 @@ transform: translateY(-280px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 
+  #video-section{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
 
 .section-6{
   padding-top:40px;
@@ -9074,6 +9634,49 @@ opacity:0%;
   opacity: 100%;
 }
 
+
+
+
+/*video*/
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+#video-text{
+  padding-left: 16px;
+  padding-right: 16px;
+width: 100%;
+}
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+  font-size: 18px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 14px;
+  }
+/*video-out*/
+
   
 }
 
@@ -9104,6 +9707,59 @@ opacity:0%;
     line-height: 24px;
     opacity:100%;
   }
+
+
+  /*video*/
+
+  #video-section{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap:50px;
+  width: auto; /* Set the container width */
+  margin: 0 auto; /* Center the video */
+ /* Optional background color */
+}
+
+video {
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#video-text{
+  padding-left: 20px;
+  padding-right: 20px;
+width: 100%;
+}
+
+#video-text > h1{
+  text-align: center;
+  font-family: 'Avenirltstd';
+font-size: 18px;
+line-height: 64px;
+margin:0px;
+}
+
+
+#video-text > p{
+  text-align: center;
+  font-family: 'Avenirltstd Book';
+  font-size: 14px;
+  }
+/*video-out*/
 }
 
 
