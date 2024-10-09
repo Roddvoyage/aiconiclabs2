@@ -1226,6 +1226,7 @@ margin:0px;
   display: flex;
   transform: translateY(600%);
   transition: color 1s ease-in-out 1200ms, border-radius 0.5s ease-in-out 800ms, width 500ms ease-in-out 800ms, transform 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms ;
+  font-family: 'Avenirltstd';
 }
 
 .show14{
@@ -1241,7 +1242,7 @@ margin:0px;
   color: rgba(30,30,30,0.0);
   background-color: #ffffff;
   border-radius: 50px;
-  font-family: 'Avenirltstd Book';
+  font-family: 'Avenirltstd';
   height:30px;
   width:2px;
   display:flex;
