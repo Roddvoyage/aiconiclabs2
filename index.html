@@ -17,18 +17,18 @@
   <div id="message-form-div">
     <div id="message-form-background"></div>
     <div id="message-form">
-  <form id="contact-form">
-    <input type="text" id="name" name="name" placeholder="Your Name" required>
-    <input type="email" id="email" name="email" placeholder="Your Email" required>
-    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-    <textarea id="message" name="message" placeholder="Your Message (max 300 characters)" maxlength="300" required></textarea>
-    <div id="char-count"></div>
-    <div id="error-message" class="error"></div>
-    <button type="submit" class="submit" id="send-message">send message</button>
-    <button id="cancel" onclick="cancelfunction()">cancel</button>
-  </form>
+        <form id="contact-form" action="https://getform.io/f/azylvmlb" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <textarea id="message" name="message" placeholder="Your Message (max 300 characters)" maxlength="300" required></textarea>
+            <div id="char-count"></div>
+            <div id="error-message" class="error"></div>
+            <button type="submit" class="submit" id="send-message">Send Message</button>
+            <button type="button" id="cancel" onclick="cancelfunction()">Cancel</button> <!-- Change type to button -->
+        </form>
     </div>
-  </div>
+</div>
   <section class="herosection">
     <nav id="staticnav">
       <div class="w-layout-blockcontainer container-2 w-container">
@@ -70,10 +70,10 @@
       </div>
     </div>
   </section>
-  <div class="w-layout-blockcontainer container-3 w-container">
-    <div class="div-block"></div>
-    <div class="div-block-2"></div>
-  </div>
+  <div class="w-layout-blockcontainer container-3"> 
+    <div class="div-block scroll-image"></div>
+    <div class="div-block-2 scroll-image"></div>
+</div>
   <section class="section">
     <div class="w-layout-blockcontainer container-4 w-container">
       <div class="div-block-3">
@@ -94,7 +94,7 @@
       <div class="div-block-8">
         <h1 class="heading-2 hidden8">Who we are</h1>
         <p class="paragraph hidden9">Our team of AI pioneers, e.com builders and marketing experts work with forward-thinking brands to explore the potential of AI, helping them stay ahead of the curve and stand out in a crowded marketplace.</p>
-        <p class="paragraph-2 hidden9">Whether you’re looking to optimize your marketing efforts, simplify the consumer journey orsimply want to stay on the cutting-edge of what’s possible, Aiconic Labs has the expertise andvision to help you get there.</p>
+        <p class="paragraph-2 hidden9">Whether you’re looking to optimize your marketing efforts, simplify the consumer journey or simply want to stay on the cutting-edge of what’s possible, Aiconic Labs has the expertise andvision to help you get there.</p>
       </div>
       <div id="rectangle">
         <div id="b-button" class="hidden19">
@@ -127,7 +127,7 @@
       <img src="images/free-instagram-iphone-15-mockup_www.sachanati.comb.png" loading="lazy" sizes="60vw" srcset="images/free-instagram-iphone-15-mockup_www.sachanati.comb-p-500.png 500w, images/free-instagram-iphone-15-mockup_www.sachanati.comb-p-800.png 800w, images/free-instagram-iphone-15-mockup_www.sachanati.comb-p-1080.png 1080w, images/free-instagram-iphone-15-mockup_www.sachanati.comb.png 1600w" alt="" class="image-5">
     </div>
     </div>
-    <p class="paragraph-3 hidden9">Why spend excessive money and time on product shoots? We can help you create morestunning visuals that increase conversion and engagement for less. It being static or video, ourunique AI tool never runs out of ideas!</p>
+    <p class="paragraph-3 hidden9">Why spend excessive money and time on product shoots? We can help you create more stunning visuals that increase conversion and engagement for less. It being static or video, our unique AI tool never runs out of ideas!</p>
   </section>
   <section class="section-4">
     <div class="div-block-18">
@@ -156,6 +156,20 @@
       </div>
     </div>
   </section>
+  <div class="video-container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: auto; padding-top: 80px;  padding-bottom: 80px;">
+    <div id="video-text">
+    <h1>AI-assistants to streamline your business</h1>
+    <p>Whether it is a personal buying assistant on your site, a customer service representative or an admin, our AI-agents will speed up delivery and help your team and organization increase customer engagement, conversion and satisfaction</p>
+  </div>
+
+    <div id="video-section">
+    <video controls width="100%" style="display: flex; border-radius: 15px;">
+      <source src="./images/WhatsApp Video 2024-10-08 at 14.29.32.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+  </div>
+
   <section class="section-6">
     <div class="div-block-21">
       <h1 class="heading-6 hidden8">FAQ</h1>
@@ -297,8 +311,12 @@
         <div class="div-block-31">
           <div class="div-block-29b"><img src="images/ComfyUI_00090_.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 21vw, (max-width: 991px) 23vw, (max-width: 5333px) 24vw, 1280px" srcset="images/ComfyUI_00090_-p-500.png 500w, images/ComfyUI_00090_-p-800.png 800w, images/ComfyUI_00090_-p-1080.png 1080w, images/ComfyUI_00090_.png 1280w" alt="" class="image-11 hidden10"></div>
           <div class="div-block-29c">
-            <img id="instagram" src="images/Untitled-12.png">
-            <img id="linkedin" src="images/Untitled-14.png">
+            <a href="https://www.instagram.com/aiconic_labs?igsh=M3ZveDlwOHo3Z3g1&utm_source=qr" target="_blank">
+              <img id="instagram" src="images/Untitled-12.png" alt="instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/aiconiclabs/" target="_blank">
+              <img id="linkedin" src="images/Untitled-14.png" alt="LinkedIn">
+            </a>
           </div>
         </div>
       </div>
