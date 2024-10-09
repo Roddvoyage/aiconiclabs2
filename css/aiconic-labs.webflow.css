@@ -27,7 +27,7 @@ html, body {
   position: fixed;  /* Use 'fixed' to make sure it covers the whole screen */
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100%;  /* Ensure it fills the whole page */
