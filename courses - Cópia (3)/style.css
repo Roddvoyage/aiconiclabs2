@@ -41,20 +41,19 @@ button, a {
   text-decoration: none; /* Remove underline from both buttons and anchors */
 }
 
-#top-div{
-  height: 500px;
-  width:100%;
-  padding:50px;
-  background-color: #ffffff;
-  color:#1e1e1e;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
+
+
+#nav-menu{
+  display: flex;
   align-items: center;
-  text-align: center;
-  gap:20px;
-  line-height: 24px;
+  justify-content: center;
+height:60px;
+width: 100%;
+background-color: #1e1e1e;
+position: fixed;
+z-index: 20;
 }
+
 
 #logo{
   font-size:14px;
@@ -64,6 +63,54 @@ button, a {
   font-weight: 700;
 }
 
+
+#menu-homepage{
+  left:120px;
+  position: absolute;
+height: 40%;
+width: auto;
+}
+
+
+
+#top-div{
+  height: 500px;
+  width:100%;
+  padding:50px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:50px;
+  line-height: 24px;
+}
+
+
+#top-div-img, #top-div-2-img{
+  display: flex;
+height: 80px;
+width:80px;
+}
+
+
+
+#top-div-text, #top-div-2-text{
+border-left: 1px solid #1e1e1e;
+padding-left: 20px;
+text-align: left;
+}
+
+
+#top-div-div, #top-div-2-div{
+  width: 80%;
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  align-items: center;
+}
 
 #top-div-2{
   width:100%;
@@ -77,6 +124,7 @@ button, a {
   align-items: center;
   height:50vh;
   text-align: center;
+  gap:50px;
 }
 
 #top-div > p{
@@ -220,7 +268,7 @@ p, li{
 
 .course2{
   position: relative; /* Needed to position the overlay and black square */
-  background-image: url('AICONICLABS_00119_.png'); /* Replace with your image */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -310,6 +358,7 @@ p, li{
 .course-square > h2,.course2-square > h2{
   font-family: 'Avenirltstd';
   font-size: 20px;
+  margin:0px;
 }
 
 .course-square > p, .course2-square > p{
@@ -320,9 +369,9 @@ p, li{
 
 
 #course-li > p, #course2-li > p{
+  font-size:16px;
   font-family: 'Avenirltstd';
-  margin-top:10px;
-  margin-bottom:0px;
+  margin:0px;
 }
 
 
@@ -374,7 +423,7 @@ color:#d9d9d9;
 }
 
 #lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
-  
+  font-size: 20px;
   font-family: 'Avenirltstd';
   margin-top:10px;
   margin-bottom:0px;
@@ -733,7 +782,36 @@ color:#d9d9d9;
       top:5%;
     }
 
+    .show6{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
 
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;
+  border-radius: 4px;
+  cursor:pointer;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+}
 
 
 @font-face {
@@ -903,6 +981,37 @@ color:#d9d9d9;
 
 @media only screen and (max-width: 912px) and (max-height: 1368px) {
 
+
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 80px;
+  }
+  
+  #menu-homepage{
+    left:80px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 80px;
+  }
+  
+
     
 #rectangle {
     height: 100%;
@@ -914,6 +1023,370 @@ color:#d9d9d9;
     padding-left: 80px;
     padding-right: 80px;
 }
+
+
+
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding:50px;
+  padding-right:80px;
+  padding-left:80px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:20px;
+  line-height: 24px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #1e1e1e; /* This creates the upside-down triangle */
+}
+
+
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:80px;
+  padding-right:80px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:80px;
+  padding-right:80px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+
+#course-li > p, #course2-li > p{
+  font-size:16px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+}
+
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-size:28px;
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  font-size:28px;
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
 
 /**/
 .section-8 {
@@ -1137,11 +1610,444 @@ background-color: #d9d9d9;
   display: flex;
 }
 
+
+
+.show{
+  height: 80vh; /* Set height or use aspect-ratio if needed */
+}
+
+.show2{
+  opacity: 0.0; /* Set height or use aspect-ratio if needed */
+}
+
+.show3{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
+
+.show4{
+  left:5%;
+  top:5%;
+}
+
+
+.show5{
+  right:5%;
+  top:5%;
+}
+
+.show6{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
+
+
 }
 
 @media only screen and (max-width: 768px) and (max-height: 1024px) {
 
-     
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 40px;
+  }
+  
+  #menu-homepage{
+    left:40px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 40px;
+  }
+  
+
+
+
+  #top-div-div, #top-div-2-div{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+  }
+  
+
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding:50px;
+  padding-right:40px;
+  padding-left:40px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:20px;
+  line-height: 24px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #1e1e1e; /* This creates the upside-down triangle */
+}
+
+
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+
+#course-li > p, #course2-li > p{
+  font-size:16px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+}
+
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
 #rectangle {
     height: 100%;
     width: 100%;
@@ -1151,6 +2057,369 @@ background-color: #d9d9d9;
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+
+
+
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding-right:40px;
+  padding-left:40px;
+  padding:50px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:20px;
+  line-height: 24px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #1e1e1e; /* This creates the upside-down triangle */
+}
+
+
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+
+#course-li > p, #course2-li > p{
+  font-size:16px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+}
+
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  font-size:24px;
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
 }
 
 /**/
@@ -1375,9 +2644,452 @@ background-color: #d9d9d9;
   font-family: 'Avenirltstd Book';
   display: flex;
 }
+
+
+
+.show{
+  height: 80vh; /* Set height or use aspect-ratio if needed */
+}
+
+.show2{
+  opacity: 0.0; /* Set height or use aspect-ratio if needed */
+}
+
+.show3{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
+
+.show4{
+  left:5%;
+  top:5%;
+}
+
+
+.show5{
+  right:5%;
+  top:5%;
+}
+
+.show6{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
 }
 
 @media only screen and (max-width: 820px) and (max-height: 1180px) {
+
+
+
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right:40px;
+  }
+  
+  #menu-homepage{
+    left:40px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 40px;
+  }
+  
+    
+  #menu-homepage{
+    left:16px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 16px;
+  }
+  
+
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding-right:40px;
+  padding-left:40px;
+  padding:50px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:20px;
+  line-height: 24px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #1e1e1e; /* This creates the upside-down triangle */
+}
+
+
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+
+#course-li > p, #course2-li > p{
+  font-size:16px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+}
+
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  font-size:18px;
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
   
 #rectangle {
     height: 100%;
@@ -1611,21 +3323,486 @@ background-color: #d9d9d9;
     display: flex;
   }
   
+
+
+  .show{
+    height: 80vh; /* Set height or use aspect-ratio if needed */
+  }
+
+  .show2{
+    opacity: 0.0; /* Set height or use aspect-ratio if needed */
+  }
+
+  .show3{
+    height: 60%;
+    background-color: rgba(30,30,30, 0.9); 
+    color:rgba(217, 217, 217, 0.9)
+  }
+
+  .show4{
+    left:5%;
+    top:5%;
+  }
+
+
+  .show5{
+    right:5%;
+    top:5%;
+  }
+
+  .show6{
+    height: 60%;
+    background-color: rgba(30,30,30, 0.9); 
+    color:rgba(217, 217, 217, 0.9)
+  }
+
+
 }
 
 @media only screen and (max-width: 1024px) and (max-height: 1366px) {
   
-    
+
+
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px; /* This creates the upside-down triangle */
+  }
+  
+  
+
+
+  
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 20px;
+  }
+
+
+
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+  }
+  
+  
+  #menu-homepage{
+    left:20px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+  
+
+
+
+
+
+  
+  #top-div-div, #top-div-2-div{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+  }
+  
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding-right:20px;
+  padding-left:20px;
+  padding:50px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:50px;
+  line-height: 24px;
+  padding-bottom: 0px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+
+#top-div-img, #top-div-2-img{
+  display: none;
+}
+
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px; /* This creates the upside-down triangle */
+}
+
+#top-div-text, #top-div-2-text{
+  border-left: 0px;
+  padding-left: 0px;
+  text-align: center;
+  }
+  
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:20px;
+  padding-right:20px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:20px;
+  padding-right:20px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+
+#course-li > p, #course2-li > p{
+  font-size:16px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+}
+
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-size:18px;
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:16px;
+  line-height: 21px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  font-size:18px;
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}  
     /**/
     .section-8 {
       background-color: #1e1e1e;
       border-radius: 0;
-      height: 100vh;
+      height: 110vh;
       padding-top: 40px;
       padding-bottom:20px;
       transform: translateY(0%);
-      padding-left:40px;
-      padding-right:40px;
+      padding-left:20px;
+      padding-right:20px;
     }
     .div-block-26 {
       height: 150px;
@@ -1690,7 +3867,7 @@ background-color: #d9d9d9;
       color: #fff;
       margin-bottom: 0;
       font-family: 'Avenirltstd Book';
-      font-size: 18px;
+      font-size: 16px;
       line-height: 28px;
       opacity: 100%;
     }
@@ -1720,7 +3897,7 @@ background-color: #d9d9d9;
       flex-direction: row;
       align-items: flex-end;
       width: 100%;
-      height:50%;
+      height:40%;
       gap:25px;
     }
     
@@ -1737,15 +3914,16 @@ background-color: #d9d9d9;
       justify-content: center;
       align-items: center;
       height: 50px;
-      width:120px;
+      width:150px;
       font-family: 'Avenirltstd';
       display: flex;
       transform: translateY(0%);
+      font-size:16px;
     }
     
     .div-block-29 {
       width: 100%;
-      height: 50%;
+      height: 40%;
       font-family: 'Avenirltstd Book';
     }
     
@@ -1838,11 +4016,74 @@ background-color: #d9d9d9;
       display: flex;
     }
 
+
+
+
+    .show{
+      height: 80vh; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show2{
+      opacity: 0.0; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show3{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
+    .show4{
+      left:5%;
+      top:5%;
+    }
+
+
+    .show5{
+      right:5%;
+      top:5%;
+    }
+
+    .show6{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
 }
 
 @media only screen and (max-width: 540px) and (max-height: 720px) {
 
- 
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 24px;
+  }
+
+  
+  #menu-homepage{
+    left:24px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 24px;
+  }
+  
      
 #rectangle {
     height: 100%;
@@ -1853,6 +4094,371 @@ background-color: #d9d9d9;
     align-items: center;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+
+
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding:50px;
+  padding-right:40px;
+  padding-left:40px;
+  padding-bottom:0px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:20px;
+  line-height: 24px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px; /* This creates the upside-down triangle */
+}
+
+
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:40px;
+  padding-right:40px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+  margin:0px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+  margin:0px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:14px;
+  line-height: 21px;
+}
+
+
+#course-li > p, #course2-li > p{
+  font-size:14px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+}
+
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:14px;
+  line-height: 21px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  font-size:14px;
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:50px;
+width:50px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
 }
 
     /**/
@@ -2079,13 +4685,457 @@ background-color: #d9d9d9;
       font-family: 'Avenirltstd Book';
       display: flex;
     }
+
+
+
+    
+    .show{
+      height: 80vh; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show2{
+      opacity: 0.0; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show3{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
+    .show4{
+      left:5%;
+      top:5%;
+    }
+
+
+    .show5{
+      right:5%;
+      top:5%;
+    }
+    .show6{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
 }
   
 @media only screen and (max-width: 375px) and (max-height: 667px) {
 }
     
 @media only screen and (max-width: 414px) and (max-height: 896px) {
+
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 16px;
+  }
+
+  
+  #menu-homepage{
+    left:16px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 16px;
+  }
+  
+
+
+
     
+  #top-div-text, #top-div-2-text{
+    border-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+    }
+
+  #top-div-img, #top-div-2-img{
+    display: none;
+  }
+
+  #top-div, #top-div-2{
+    height: 500px;
+    width:100%;
+    padding:50px;
+    padding-right:16px;
+    padding-left:16px;
+    padding-bottom:0px;
+    background-color: #ffffff;
+    color:#1e1e1e;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    line-height: 24px;
+  }
+  
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+  }
+  
+  #top-div > p{
+    text-align: left;
+  margin:0px;
+  width: 50%;
+  color:#d9d9d9;
+  }
+  
+  #top-div-2 >p{
+    margin:0px;
+    width: 50%;
+    
+    }
+  #rectangle {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+  
+  h1{
+    font-family: Playfairdisplay Variablefont Wght, sans-serif;
+    display: flex;
+    align-items: center;
+    margin:0px;
+    color:#1e1e1e;
+  }
+  
+  p, li{
+    font-family: 'Avenirltstd book';
+  }
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px; /* This creates the upside-down triangle */
+  }
+  
+  
+  
+  
+  #lectures{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left:16px;
+    padding-right:16px;
+    gap:100px;
+  }
+  
+  
+  #courses{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left:16px;
+    padding-right:16px;
+    gap:100px;
+  }
+  
+  
+  #lecture1-div, #lecture2-div, #lecture3-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:auto;
+  }
+  
+  #course-div, #course2-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:auto;
+  }
+  
+  
+  /* Main div with the background image */
+  .lecture1{
+    position: relative; /* Needed to position the overlay and black square */
+    background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px; /* Set height or use aspect-ratio if needed */
+    border-radius:15px;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+    transition: height 500ms ease-in-out 100ms;
+  }
+  
+  
+  .lecture3{
+    position: relative; /* Needed to position the overlay and black square */
+    background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px; /* Set height or use aspect-ratio if needed */
+    border-radius:15px;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+    transition: height 500ms ease-in-out 100ms;
+  }
+  
+  
+  .lecture2{
+    position: relative; /* Needed to position the overlay and black square */
+    background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px; /* Set height or use aspect-ratio if needed */
+    border-radius:15px;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: end;
+    transition: height 500ms ease-in-out 100ms;
+  }
+  
+  
+  
+  
+  .course2{
+    position: relative; /* Needed to position the overlay and black square */
+    background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px; /* Set height or use aspect-ratio if needed */
+    border-radius:15px;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: end;
+    transition: height 500ms ease-in-out 100ms;
+  }
+  
+  
+  .course{
+    position: relative; /* Needed to position the overlay and black square */
+    background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100px; /* Set height or use aspect-ratio if needed */
+    border-radius:15px;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: end;
+    transition: height 500ms ease-in-out 100ms;
+  }
+  
+  
+  
+  /* The semi-transparent white overlay */
+  .white-overlay {
+    position: absolute; /* Position it to cover the entire image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* White filter */
+    opacity: 0.5; /* Adjust this value for more or less transparency */
+    pointer-events: none; /* Makes sure it doesn't block clicks */
+    transition: opacity 500ms ease-in-out 500ms;
+  }
+  
+  /* The fully opaque black square */
+  .lecture1-square, .lecture2-square, .lecture3-square {
+    position: absolute; /* Make it absolute within the container */
+    height: 1%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+    z-index: 1; /* Ensure the black square is on top of the white overlay */
+    color:rgba(217, 217, 217, 0.0);
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+  }
+  
+  
+  
+  .course-square, .course2-square {
+    position: absolute; /* Make it absolute within the container */
+    height: 1%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+    z-index: 1; /* Ensure the black square is on top of the white overlay */
+    color:rgba(30, 30, 30, 0.0);
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+  }
+  
+  
+  .lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+    font-family: 'Avenirltstd';
+    font-size: 20px;
+    margin:0px;
+  }
+  
+  .course-square > h2,.course2-square > h2{
+    font-family: 'Avenirltstd';
+    font-size: 20px;
+    margin:0px;
+  }
+  
+  .course-square > p, .course2-square > p{
+    font-family: 'Avenirltstd book';
+    font-size:14px;
+    line-height: 21px;
+  }
+  
+  
+  #course-li > p, #course2-li > p{
+    font-size:14px;
+    font-family: 'Avenirltstd';
+    margin:0px;
+  }
+  
+  
+  .course2-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+  height:35px;
+  width:35px;
+  border-radius: 50px;
+  background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+  color:#d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+  }
+  
+  .course-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+  left: 50%;
+  height:35px;
+  width:35px;
+  border-radius: 50px;
+  background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+  color:#d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+  }
+  
+  
+  
+  
+  .course-circle > p, .course2-circle > p{
+    font-size: 14px;
+    font-family: 'Avenirltstd';
+  color:#d9d9d9;
+  }
+  
+  
+  
+  
+  .lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+    font-family: 'Avenirltstd book';
+    font-size:14px;
+    line-height: 21px;
+  }
+  
+  #lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+    font-size:18px;
+    font-family: 'Avenirltstd';
+    margin-top:10px;
+    margin-bottom:0px;
+  }
+  
+  .lecture1-circle, .lecture3-circle{
+      position: absolute; /* Make it absolute within the container */
+      top:30%;
+      right: 50%;
+  height:35px;
+  width:35px;
+  border-radius: 50px;
+  background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+  color:#d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+  }
+  .lecture2-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+  left: 50%;
+  height:35px;
+  width:35px;
+  border-radius: 50px;
+  background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+  color:#d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+  }
+  
+  .lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+    font-size: 14px;
+    font-family: 'Avenirltstd';
+  color:#d9d9d9;
+  }
+
+
 
     .section-8 {
       background-color: #1e1e1e;
@@ -2382,10 +5432,462 @@ background-color: #d9d9d9;
       height: 20px;
     width:auto;
     }
+
+
+    
+    .show{
+      height: 80vh; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show2{
+      opacity: 0.0; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show3{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
+    .show4{
+      left:5%;
+      top:5%;
+    }
+
+
+    .show5{
+      right:5%;
+      top:5%;
+    }
+    .show6{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
 }
   
 @media only screen and (max-width: 390px) and (max-height: 844px) {     
+
+
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 16px;
+  }
+
+
+  
+  #menu-homepage{
+    left:16px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 16px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+  #top-div-text, #top-div-2-text{
+    border-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+    }
+  #top-div-img, #top-div-2-img{
+    display: none;
+  }
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding:50px;
+  padding-right:16px;
+  padding-left:16px;
+  padding-bottom:0px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:20px;
+  line-height: 24px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px; /* This creates the upside-down triangle */
+}
+
+
+
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:16px;
+  padding-right:16px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:16px;
+  padding-right:16px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+  margin:0px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+  margin:0px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:14px;
+  line-height: 21px;
+}
+
+
+#course-li > p, #course2-li > p{
+  font-size:14px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+}
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-size: 14px;
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:14px;
+  line-height: 21px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  font-size:14px;
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-size: 14px;
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
     
      .section-7 {
        justify-content: center;
@@ -2697,11 +6199,79 @@ background-color: #d9d9d9;
      }
      
      
+    .show{
+      height: 80vh; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show2{
+      opacity: 0.0; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show3{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
+    .show4{
+      left:5%;
+      top:5%;
+    }
+
+
+    .show5{
+      right:5%;
+      top:5%;
+    }
+    .show6{
+      height: 60%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
+     
 }
    
 @media only screen and (max-width: 430px) and (max-height: 932px) {
-    
+
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 16px;
+  }
+
   
+  #menu-homepage{
+    left:16px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 16px;
+  }
+  
+
+
+
+
+    
+  #top-div-img, #top-div-2-img{
+    display: none;
+  }
      
 #rectangle {
     height: 100%;
@@ -2714,7 +6284,391 @@ background-color: #d9d9d9;
     padding-right: 20px;
 }
 
+#top-div-text, #top-div-2-text{
+  border-left: 0px;
+  padding-left: 0px;
+  text-align: center;
+  }
 
+
+#top-div, #top-div-2{
+  height: 500px;
+  width:100%;
+  padding:50px;
+  padding-right:16px;
+  padding-left:16px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+  color:#1e1e1e;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:20px;
+  line-height: 24px;
+}
+
+#logo{
+  font-size:14px;
+  letter-spacing: 15px;
+  color:#ffffff;
+  font-family: 'Bevietnampro';
+  font-weight: 700;
+}
+
+
+#top-div > p{
+  text-align: left;
+margin:0px;
+width: 50%;
+color:#d9d9d9;
+}
+
+#top-div-2 >p{
+  margin:0px;
+  width: 50%;
+  
+  }
+#rectangle {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h1{
+  font-family: Playfairdisplay Variablefont Wght, sans-serif;
+  display: flex;
+  align-items: center;
+  margin:0px;
+  color:#1e1e1e;
+}
+
+p, li{
+  font-family: 'Avenirltstd book';
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px; /* This creates the upside-down triangle */
+}
+
+
+
+#lectures{
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:16px;
+  padding-right:16px;
+  gap:100px;
+}
+
+
+#courses{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left:16px;
+  padding-right:16px;
+  gap:100px;
+}
+
+
+#lecture1-div, #lecture2-div, #lecture3-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+#course-div, #course2-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:auto;
+}
+
+
+/* Main div with the background image */
+.lecture1{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.21.58.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture3{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.lecture2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00016_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+
+.course2{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('WhatsApp\ Image\ 2024-09-23\ at\ 12.22.43.jpeg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+.course{
+  position: relative; /* Needed to position the overlay and black square */
+  background-image: url('AICONICLABS_00148_.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Set height or use aspect-ratio if needed */
+  border-radius:15px;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  transition: height 500ms ease-in-out 100ms;
+}
+
+
+
+/* The semi-transparent white overlay */
+.white-overlay {
+  position: absolute; /* Position it to cover the entire image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* White filter */
+  opacity: 0.5; /* Adjust this value for more or less transparency */
+  pointer-events: none; /* Makes sure it doesn't block clicks */
+  transition: opacity 500ms ease-in-out 500ms;
+}
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.lecture1-square > h2,.lecture2-square > h2, .lecture3-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 20px;
+  margin:0px;
+}
+
+.course-square > h2,.course2-square > h2{
+  font-family: 'Avenirltstd';
+  font-size: 18px;
+  margin:0px;
+}
+
+.course-square > p, .course2-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:13px;
+  line-height: 19px;
+  margin-bottom:0px;
+  margin-top:5px;
+}
+
+
+#course-li > p, #course2-li > p{
+  line-height: 14px;
+  font-size:14px;
+  font-family: 'Avenirltstd';
+  margin:0px;
+  margin-top:5px;
+}
+
+
+.course2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+  right: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.course-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+
+
+
+.course-circle > p, .course2-circle > p{
+  font-size: 14px;
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
+
+
+
+
+.lecture1-square > p, .lecture2-square > p, .lecture3-square > p{
+  font-family: 'Avenirltstd book';
+  font-size:14px;
+  line-height: 21px;
+}
+
+.lecture3-square > p{
+margin-bottom: 10px;
+}
+
+#lecture1-li > p, #lecture2-li > p, #lecture3-li > p{
+  font-size:14px;
+  font-family: 'Avenirltstd';
+  margin-top:10px;
+  margin-bottom:0px;
+}
+
+
+#lecture3-li > p{
+  margin-top:5px;
+}
+
+.lecture1-circle, .lecture3-circle{
+    position: absolute; /* Make it absolute within the container */
+    top:30%;
+    right: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: right 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+.lecture2-circle{
+  position: absolute; /* Make it absolute within the container */
+  top:30%;
+left: 50%;
+height:35px;
+width:35px;
+border-radius: 50px;
+background-color: rgba(30,30,30, 0.9); /* Fully opaque black square */
+color:#d9d9d9;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: left 500ms ease-in-out 500ms, top 350ms ease-in-out 500ms;
+}
+
+.lecture1-circle > p, .lecture2-circle > p, .lecture3-circle > p{
+  font-size: 14px;
+  font-family: 'Avenirltstd';
+color:#d9d9d9;
+}
     
      .section-7 {
        justify-content: center;
@@ -3020,14 +6974,364 @@ background-color: #d9d9d9;
      width:auto;
      }
      
+
+     
+    .show{
+      height: 80vh; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show2{
+      opacity: 0.0; /* Set height or use aspect-ratio if needed */
+    }
+
+    .show3{
+      height: 40%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
+    .show4{
+      left:5%;
+      top:5%;
+    }
+
+
+    .show5{
+      right:5%;
+      top:5%;
+    }
+    .show6{
+      height: 50%;
+      background-color: rgba(30,30,30, 0.9); 
+      color:rgba(217, 217, 217, 0.9)
+    }
+
 }
  
 @media only screen and (max-width: 360px) and (max-height: 740px) {
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 16px;
+  }
 
+  
+  #menu-homepage{
+    left:16px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 16px;
+  }
+  
+
+
+  #top-div-img, #top-div-2-img{
+    display: none;
+  }
+
+  
+  #top-div-text, #top-div-2-text{
+    border-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+    }
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+   
+.show{
+  height: 80vh; /* Set height or use aspect-ratio if needed */
+}
+
+.show2{
+  opacity: 0.0; /* Set height or use aspect-ratio if needed */
+}
+
+.show3{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
+
+.show4{
+  left:5%;
+  top:5%;
+}
+
+
+.show5{
+  right:5%;
+  top:5%;
+}
+
+.show6{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
 }
   
 @media only screen and (max-width: 412px) and (max-height: 915px) {
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 16px;
+  }
+
+
+
+  #top-div-img, #top-div-2-img{
+    display: none;
+  }
+
+  
+  #menu-homepage{
+    left:16px;
+    position: absolute;
+  height: 30%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:12px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 16px;
+  }
+  
+  
+  #top-div-text, #top-div-2-text{
+    border-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+    }
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+.show{
+  height: 80vh; /* Set height or use aspect-ratio if needed */
+}
+
+.show2{
+  opacity: 0.0; /* Set height or use aspect-ratio if needed */
+}
+
+.show3{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
+
+.show4{
+  left:5%;
+  top:5%;
+}
+
+
+.show5{
+  right:5%;
+  top:5%;
+}
+
+.show6{
+  height: 70%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
 }
   
 @media only screen and (max-width: 344px) and (max-height: 882px){
+
+  #nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  height:60px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  z-index: 20;
+  padding-right: 16px;
+  }
+  
+  
+  #menu-homepage{
+    left:16px;
+    position: absolute;
+  height: 40%;
+  width: auto;
+  }
+  
+
+  #logo{
+    font-size:14px;
+    letter-spacing: 15px;
+    color:#ffffff;
+    font-family: 'Bevietnampro';
+    font-weight: 700;
+    right: 16px;
+  }
+  
+  
+
+
+
+
+  #top-div-img, #top-div-2-img{
+    display: none;
+  }
+
+
+  #top-div-text, #top-div-2-text{
+    border-left: 0px;
+    padding-left: 0px;
+    text-align: center;
+    }
+
+/* The fully opaque black square */
+.lecture1-square, .lecture2-square, .lecture3-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(30,30,30, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(217, 217, 217, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+
+
+.course-square, .course2-square {
+  position: absolute; /* Make it absolute within the container */
+  height: 1%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(217,217,217, 0.0); /* Fully opaque black square */
+  z-index: 1; /* Ensure the black square is on top of the white overlay */
+  color:rgba(30, 30, 30, 0.0);
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition:height 500ms ease-in-out 500ms, background-color 500ms ease-in-out 500ms, color 500ms ease-in-out 1s;
+}
+   
+.show{
+  height: 80vh; /* Set height or use aspect-ratio if needed */
+}
+
+.show2{
+  opacity: 0.0; /* Set height or use aspect-ratio if needed */
+}
+
+.show3{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
+
+.show4{
+  left:5%;
+  top:5%;
+}
+
+
+.show5{
+  right:5%;
+  top:5%;
+}
+.show6{
+  height: 60%;
+  background-color: rgba(30,30,30, 0.9); 
+  color:rgba(217, 217, 217, 0.9)
+}
+
 }
